@@ -1,0 +1,37 @@
+@use 'src/styles/vars';
+
+.form {
+  display: flex;
+
+  & > input {
+    height: 5rem;
+    border: 0;
+    flex: 1;
+    padding: 2rem;
+    font-size: 1rem;
+    color: vars.$dark-blue;
+
+    @media screen and (max-width: 400px) {
+      padding: 1rem;
+    }
+
+    @media screen and (max-width: 350px) {
+      padding: .1rem;
+    }
+  }
+
+  & > button {
+    background-color: vars.$light-color;
+    border: 0px;
+  }
+
+  .submit__icon {
+    color: vars.$normal-blue;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+
+    &:hover{
+      color: vars.$dark-blue;
+    }
+  }
+}
